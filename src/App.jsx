@@ -9,15 +9,22 @@ import { Element } from 'react-scroll';
 
 function App() {
   return (
-   <div>
-    <NavBar></NavBar>
-    <Element name="home">
+    <div>
+      <NavBar></NavBar>
+      <Element name="home">
         <Header />
       </Element>
-    <Proyects></Proyects>
-    <Technologies></Technologies>
-    <AboutMe></AboutMe>
-   </div>
+      <Element name='projects'>
+        <Proyects></Proyects>
+      </Element>
+      <Element name='technologies'>
+        <Technologies></Technologies>
+      </Element>
+      <Element name='about me'>
+        <AboutMe></AboutMe>
+      </Element>
+
+    </div>
   )
 }
 
