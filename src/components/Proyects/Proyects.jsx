@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProyectCard";
 import Coworking from "../../assets/Coworking.jpg"
+import wellNest from "../../assets/wellnest.jpg"
 
 const Proyects =()=>{
     const projectsData = [
@@ -14,7 +15,7 @@ const Proyects =()=>{
           title: 'WellNest Clinic',
           description: 'Contribución al diseño y desarrollo de una plataforma médica.',
           link: 'https://wellnest-clinic.netlify.app/',
-          screenshot: Coworking,
+          screenshot: wellNest,
         },
         {
           title: 'Plataforma de Recetas de Comida',
@@ -22,14 +23,15 @@ const Proyects =()=>{
           link: 'https://github.com/MDPereyra22/piFood',
           screenshot: Coworking,
         },
+        
         // Agrega más proyectos según sea necesario
       ];
 
 
     return(
-        <section className="my-8 text-center">
-      <h2 className="text-2xl font-bold mb-4">Proyectos</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-8 text-center">
+      <h2 className="text-3xl font-bold mb-4">Proyectos</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mx-9">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

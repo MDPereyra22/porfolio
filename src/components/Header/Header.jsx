@@ -4,7 +4,7 @@ import profileImage from "../../assets/perfil.jpg"
 const Header = () => {
     return (
         <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-8 text-white text-center">
-            <div className="flex items-center justify-center mb-4">
+            <div className="rounded border-black flex items-center justify-center mb-4">
                 <img
                     src={profileImage}
                     alt="Profile"

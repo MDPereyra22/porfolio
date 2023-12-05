@@ -5,7 +5,7 @@ const ProjectCard = ({ screenshot, title, description, link }) => (
      <img
       src={screenshot}
       alt={`Screenshot de ${title}`}
-      className="mb-4 rounded-md w-full h-32 object-cover"
+      className="mb-4 rounded-md w-full h-32 object-cover transition-transform transform hover:scale-105"
     />
     <h3 className="text-lg font-semibold mb-2">{title}</h3>
     <p className="text-gray-700 mb-4">{description}</p>
@@ -13,7 +13,7 @@ const ProjectCard = ({ screenshot, title, description, link }) => (
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+      className="bg-purple-500 text-white py-2 px-4 rounded-md hover:bg-pink-600 transition duration-300"
     >
       Ver Proyecto
     </a>
