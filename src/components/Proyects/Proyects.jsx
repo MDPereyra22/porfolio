@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "./ProyectCard";
 import Coworking from "../../assets/Coworking.jpg"
 import wellNest from "../../assets/wellnest.jpg"
-import { motion } from "framer-motion";
 
 const Proyects =()=>{
     const projectsData = [
@@ -25,19 +24,18 @@ const Proyects =()=>{
           screenshot: Coworking,
         },
         
-        // Agrega más proyectos según sea necesario
       ];
 
 
     return(
-        <motion.section className="bg-gradient-to-r flex flex-col items-center justify-center from-amber-300 via-amber-200 to-amber-100 p-8 text-center min-h-screen">
-      <h2 className="text-3xl font-bold mb-4">Proyectos</h2>
+        <section className="bg-gradient-to-r flex flex-col items-center justify-center from-amber-300 via-amber-200 to-amber-100 p-8 text-center min-h-screen">
+      <h2 className="text-4xl font-bold mb-24">Proyectos</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mx-9">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-    </motion.section>
+    </section>
     );
 };
 

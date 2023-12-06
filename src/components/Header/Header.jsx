@@ -24,6 +24,14 @@ const Header = () => {
                     <motion.p initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }} className="text-xl mb-4">Full Stack Web Developer</motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.8 }}
+                        className="text-lg italic text-gray-600"
+                    >
+                        "Transformando ideas en experiencias digitales"
+                    </motion.p>
                     {/* <a
                         href="https://github.com/MDPereyra22"
                         target="_blank"

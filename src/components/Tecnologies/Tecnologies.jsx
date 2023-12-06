@@ -45,7 +45,7 @@ const Technologies = () => {
   };
 
   return (
-    <section className=" text-center min-h-[500px] bg-gradient-to-r from-amber-300 via-amber-200 to-amber-100 p-14">
+    <section className=" text-center min-h-screen bg-gradient-to-r from-amber-300 via-amber-200 to-amber-100 p-24">
       <h2 className="text-3xl font-bold mb-10">Tecnologías</h2>
       <div className="flex justify-center mb-8 space-x-4">
         {Object.keys(techData).map((tab) => (
