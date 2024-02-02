@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
 import jsImage from '../../assets/java-script.png';
 import htmlImage from '../../assets/html.png';
 import cssImage from '../../assets/css.png';
@@ -45,36 +47,38 @@ const Technologies = () => {
   };
 
   return (
-    <section className=" text-center min-h-screen bg-gradient-to-r from-amber-300 via-amber-200 to-amber-100 p-24">
-      <h2 className="text-3xl font-bold mb-10">Tecnologías</h2>
+    <motion.section
+      className="text-center min-h-screen bg-slate-900 p-24"
+    >
+      <h2 className="text-3xl font-bold mb-10 text-white">Tecnologías</h2>
       <div className="flex justify-center mb-8 space-x-4">
         {Object.keys(techData).map((tab) => (
-          <button
+          <motion.button
             key={tab}
-            onClick={()=>handleTabChange(tab)}
+            onClick={() => handleTabChange(tab)}
             className={`px-4 py-2 rounded-full ${
-              activeTab === tab ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-800'}
-              transition-all duration-300
-            }`}
+              activeTab === tab ? 'bg-white text-black' : 'bg-gray-800 text-white'
+            } transition-all duration-300`}
           >
             {tab}
-          </button>
+          </motion.button>
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {techData[activeTab].map(({ name, icon }, index) => (
-          <TechCard key={index} name={name} icon={icon} />
+          <motion.div
+            key={index}
+            className="bg-white p-2 w-80 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            {icon && <img src={icon} alt={name} className="w-12 h-12 mb-4 mx-auto" />}
+            <p className="text-gray-800 font-semibold text-center">{name}</p>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
-
-const TechCard = ({ name, icon: Icon }) => (
-  <div className="bg-white p-2 w-80 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 mx-auto">
-    {Icon && <img src={Icon} alt={name} className="w-12 h-12 mb-4 mx-auto" />}
-    <p className="text-gray-800 font-semibold text-center">{name}</p>
-  </div>
-);
 
 export default Technologies;

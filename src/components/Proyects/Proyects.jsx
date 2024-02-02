@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <motion.section
-      className="bg-slate-900 p-8 text-center min-h-screen"
+      className="bg-slate-900 p-14 text-center min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

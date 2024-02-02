@@ -7,6 +7,7 @@ import AboutMe from './components/Aboutme/AboutMe';
 import NavBar from './components/NavBar/NavBar';
 import Separador from './components/Separador/Separador';
 import { Element } from 'react-scroll';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Technologies></Technologies>
       </Element>
       <Separador></Separador>
+      <Footer></Footer>
     
 
     </div>

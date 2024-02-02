@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import profileImage from "../../assets/perfil.jpg";
-import computerImage from "../../assets/pc.jpg";
+import qr from "../../assets/qr.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -72,23 +72,26 @@ const Header = () => {
               transition={{ duration: 0.5 }}
               className="bg-white text-gray-800 p-4 rounded-md relative flex"
             >
-              <div className="flex-grow">
-                <p className="text-left p-2">
+              <div className="flex-grow mr-8">
+                <p className="text-left p-2 text-sm font-bold">
                   Hola, soy Matías, un apasionado desarrollador Full Stack con una visión creativa y una mente analítica. Mi enfoque se centra en transformar ideas en experiencias digitales cautivadoras. Con habilidades sólidas en tecnologías web y un compromiso constante con la excelencia, busco marcar la diferencia a través de la innovación.
                 </p>
-                <p className="text-left p-2">
+                <p className="text-left p-2 text-sm font-bold">
                   Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica. Ahora, como desarrollador, estoy decidido a aplicar mis habilidades para crear soluciones innovadoras.
                 </p>
-                <p className="text-left p-2">
+                <p className="text-left p-2 text-sm font-bold">
                   Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
                 </p>
               </div>
-              <div className="flex-shrink-0 ml-4">
-                <img
-                  src={computerImage}
-                  alt="Computer"
-                  className="w-32 h-auto rounded-md"
-                />
+              <div className="flex-shrink-0">
+                <div className="flex flex-col items-center">
+                  <img
+                    src={qr}
+                    alt="Contactame"
+                    className="w-32 h-32 rounded-md mb-2"
+                  />
+                  <p className="text-xs font-bold">Contactame</p>
+                </div>
               </div>
             </motion.div>
           )}
