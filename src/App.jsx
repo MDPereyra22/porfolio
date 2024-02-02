@@ -24,9 +24,7 @@ function App() {
         <Technologies></Technologies>
       </Element>
       <Separador></Separador>
-      <Element name='about me'>
-        <AboutMe></AboutMe>
-      </Element>
+    
 
     </div>
   )
