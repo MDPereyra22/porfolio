@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProyectCard";
 
-import wellNest from "../../assets/wellnest.jpg";
+import wellNest from "../../assets/wellnest.JPG";
 import recetas from "../../assets/Recetas.jpg";
 import { motion } from "framer-motion";
 
