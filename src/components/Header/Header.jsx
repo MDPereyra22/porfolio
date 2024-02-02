@@ -70,16 +70,16 @@ const Header = () => {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-white text-gray-800 p-4 rounded-md relative flex"
+              className=" text-gray-50 p-4 rounded-md relative flex"
             >
               <div className="flex-grow mr-8">
-                <p className="text-left p-2 text-sm font-bold">
+                <p className="text-left p-1 text-sm font-bold">
                   Hola, soy Matías, un apasionado desarrollador Full Stack con una visión creativa y una mente analítica. Mi enfoque se centra en transformar ideas en experiencias digitales cautivadoras. Con habilidades sólidas en tecnologías web y un compromiso constante con la excelencia, busco marcar la diferencia a través de la innovación.
                 </p>
-                <p className="text-left p-2 text-sm font-bold">
+                <p className="text-left p-1 text-sm font-bold">
                   Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica. Ahora, como desarrollador, estoy decidido a aplicar mis habilidades para crear soluciones innovadoras.
                 </p>
-                <p className="text-left p-2 text-sm font-bold">
+                <p className="text-left p-1 text-sm font-bold">
                   Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
                 </p>
               </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProyectCard";
-
-import wellNest from "../../assets/wellnest.JPG";
-import recetas from "../../assets/Recetas.jpg";
+// import coworking from "../../assets/Coworking.jpg";
+// import wellNest from "../../assets/wellnest.jpg";
+// import recetas from "../../assets/Recetas.jpg";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -11,19 +11,19 @@ const Projects = () => {
       title: 'Sinergia Coworking',
       description: 'Plataforma de coworking diseñada e implementada para fomentar la colaboración entre profesionales. Desarrollada con React y Node.js, con integración de autenticación.',
       link: 'https://develop--sinergia-cowork.netlify.app/',
-      screenshot: wellNest,
+      // screenshot: coworking,
     },
     {
       title: 'WellNest Clinic',
       description: 'Colaboración en el diseño y desarrollo de una plataforma médica centrada en el bienestar del paciente. Utiliza tecnologías como React, Redux y Firebase para una experiencia fluida y segura.',
       link: 'https://wellnest-clinic.netlify.app/',
-      screenshot: wellNest,
+      // screenshot: wellNest,
     },
     {
       title: 'The Best Food App',
       description: 'Plataforma integral de recetas de comida con un diseño atractivo y funcionalidades avanzadas. Desarrollada con React y Firebase para garantizar una experiencia de usuario óptima.',
       link: 'https://thebestfoodapp.netlify.app',
-      screenshot: recetas,
+      // screenshot: recetas,
     },
   ];
 
