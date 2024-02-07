@@ -15,8 +15,8 @@ const Header = () => {
   return (
     <motion.header 
       className="bg-slate-900 min-h-screen flex flex-col items-center justify-center p-20 text-black text-center">
-      <div className="rounded-lg border-2 border-orange-300 overflow-hidden shadow-md mb-8 max-w-4xl">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 bg-black text-white">
+      <div className="rounded-lg  overflow-hidden shadow-black shadow-xl mb-8 max-w-4xl">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4  text-white">
           <motion.img
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
