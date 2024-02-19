@@ -25,7 +25,9 @@ function App() {
         <Technologies></Technologies>
       </Element>
       <Separador></Separador>
+      <Element name='footer'>
       <Footer></Footer>
+      </Element>
     
 
     </div>

@@ -17,8 +17,8 @@ const NavBar =()=>{
                 <Link className="cursor-pointer" to="technologies" spy={true} smooth={true} duration={500}>
                     Tecnologías
                 </Link>
-                <Link className="cursor-pointer" to="about me" spy={true} smooth={true} duration={500}>
-                    Acerca de
+                <Link className="cursor-pointer" to="footer" spy={true} smooth={true} duration={500}>
+                    Contacto
                 </Link>
             </div>
         </nav>
