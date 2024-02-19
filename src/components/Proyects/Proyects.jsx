@@ -29,12 +29,12 @@ const Projects = () => {
 
   return (
     <motion.section
-      className="bg-slate-900 p-14 text-center min-h-screen"
+      className="bg-gradient-to-r from-purple-800 to-indigo-900 p-14 text-white text-center min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h2 className="text-4xl font-bold mb-8 text-white">Proyectos Destacados</h2>
+      <h2 className="text-4xl font-bold mb-8">Proyectos Destacados</h2>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         initial={{ y: 20, opacity: 0 }}

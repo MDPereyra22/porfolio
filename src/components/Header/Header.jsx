@@ -13,17 +13,16 @@ const Header = () => {
   };
 
   return (
-    <motion.header 
-      className="bg-slate-900 min-h-screen flex flex-col items-center justify-center p-20 text-black text-center">
-      <div className="rounded-lg  overflow-hidden shadow-black shadow-xl mb-8 max-w-4xl">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4  text-white">
+    <motion.header className="bg-gradient-to-r from-purple-800 to-indigo-900 min-h-screen flex flex-col items-center justify-center p-20 text-black text-center">
+      <div className="overflow-hidden mb-8 max-w-4xl">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4">
           <motion.img
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0.2 }}
             src={profileImage}
             alt="Profile"
-            className="w-52 h-52 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4"
+            className="w-80 h-80 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4 shadow-xl"
           />
           <div className="text-center md:text-left">
             <motion.h1
@@ -46,7 +45,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-md italic text-gray-600 mb-4"
+              className="text-md italic text-gray-300 mb-4"
             >
               "Transformando ideas en experiencias digitales"
             </motion.p>
@@ -54,8 +53,11 @@ const Header = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: 1 }}
             onClick={toggleAboutMe}
-            className="bg-white text-black px-4 py-2 rounded-full"
+            className={`bg-white text-black px-4 py-2 rounded-full ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
           >
             <span className="mr-2">
               <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
@@ -70,16 +72,16 @@ const Header = () => {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className=" text-gray-50 p-4 rounded-md relative flex"
+              className="text-gray-50 p-4 rounded-md relative flex"
             >
               <div className="flex-grow mr-8">
-                <p className="text-left p-1 text-sm font-bold">
-                  Hola, soy Matías, un apasionado desarrollador Full Stack con una visión creativa y una mente analítica. Mi enfoque se centra en transformar ideas en experiencias digitales cautivadoras. Con habilidades sólidas en tecnologías web y un compromiso constante con la excelencia, busco marcar la diferencia a través de la innovación.
+                <p className="text-left p-2 text-sm">
+                  Soy Matías, un apasionado desarrollador Full Stack con una visión creativa y una mente analítica. Mi enfoque se centra en transformar ideas en experiencias digitales cautivadoras. Con habilidades sólidas en tecnologías web y un compromiso constante con la excelencia, busco marcar la diferencia a través de la innovación.
                 </p>
-                <p className="text-left p-1 text-sm font-bold">
+                <p className="text-left p-2 text-sm">
                   Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica. Ahora, como desarrollador, estoy decidido a aplicar mis habilidades para crear soluciones innovadoras.
                 </p>
-                <p className="text-left p-1 text-sm font-bold">
+                <p className="text-left p-2 text-sm">
                   Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
                 </p>
               </div>
@@ -88,7 +90,7 @@ const Header = () => {
                   <img
                     src={qr}
                     alt="Contactame"
-                    className="w-32 h-32 rounded-md mb-2"
+                    className="w-48 h-48 rounded-md mb-2 shadow-md"
                   />
                   <p className="text-xs font-bold">Contactame</p>
                 </div>
