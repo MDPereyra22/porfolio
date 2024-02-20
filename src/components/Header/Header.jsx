@@ -4,6 +4,8 @@ import qr from "../../assets/qr.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import cv from '../../assets/CV.pdf'
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,20 +52,42 @@ const Header = () => {
               "Transformando ideas en experiencias digitales"
             </motion.p>
           </div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 1 }}
-            onClick={toggleAboutMe}
-            className={`bg-white text-black px-4 py-2 rounded-full w-60 ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
-          >
-            <span className="mr-2">
-              <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
-            </span>
-            {isOpen ? "Minimizar" : "Acerca de mí"}
-          </motion.button>
+
+          <div className="w-52">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, delay: 1 }}
+              className={`bg-white text-black px-4 py-2 rounded-full w-52 mb-2 hover:bg-gray-300 transition-colors duration-300`}
+            >
+              <a
+                href={cv}
+                download="MatíasPereyraCV.pdf"
+                className="flex items-center justify-center"
+                style={{ width: '100%', height: '100%', textDecoration: 'none' }}
+              >
+                <span className="mr-2">Descargar CV</span>
+
+              </a>
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, delay: 1 }}
+              onClick={toggleAboutMe}
+              className={`bg-white text-black px-4 py-2 rounded-full w-52  ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
+            >
+              <span className="mr-2">
+                <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+              </span>
+              {isOpen ? "Minimizar" : "Acerca de mí"}
+            </motion.button>
+
+          </div>
         </div>
         <AnimatePresence>
           {isOpen && (
