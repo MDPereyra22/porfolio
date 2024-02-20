@@ -57,7 +57,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 1 }}
             onClick={toggleAboutMe}
-            className={`bg-white text-black px-4 py-2 rounded-full ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
+            className={`bg-white text-black px-4 py-2 rounded-full w-60 ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
           >
             <span className="mr-2">
               <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
