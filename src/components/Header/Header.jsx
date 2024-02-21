@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <motion.header className="bg-gradient-to-r from-purple-800 to-indigo-900 min-h-screen flex flex-col items-center justify-center p-20 text-black text-center">
       <div className="overflow-hidden mb-8 max-w-4xl">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 mb-2">
           <motion.img
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -31,7 +31,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 ml-4"
             >
               Matías Daniel Pereyra
             </motion.h1>
@@ -39,7 +39,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg md:text-xl mb-4"
+              className="text-lg md:text-xl mb-4  ml-4"
             >
               Full Stack Web Developer
             </motion.p>
@@ -47,7 +47,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-md italic text-gray-300 mb-4"
+              className="text-md italic text-gray-300 mb-4  ml-4"
             >
               "Transformando ideas en experiencias digitales"
             </motion.p>
@@ -60,7 +60,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className={`bg-white text-black px-4 py-2 rounded-full w-52 mb-2 hover:bg-gray-300 transition-colors duration-300`}
+              className={`bg-transparent border-black border-solid border-2 text-white px-4 py-2 rounded-full w-40  mb-2 hover:bg-gray-400 transition-colors duration-300`}
             >
               <a
                 href={cv}
@@ -79,7 +79,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               onClick={toggleAboutMe}
-              className={`bg-white text-black px-4 py-2 rounded-full w-52  ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-300 transition-colors duration-300`}
+              className={`bg-transparent border-black border-solid border-2 text-white px-4 py-2 rounded-full w-40  ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-400 transition-colors duration-300`}
             >
               <span className="mr-2">
                 <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />

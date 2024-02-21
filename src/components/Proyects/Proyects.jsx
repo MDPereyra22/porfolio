@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProyectCard";
-// import coworking from "../../assets/Coworking.jpg";
+import coworking from "../../assets/coworking.jpg";
 // import wellNest from "../../assets/wellnest.jpg";
 // import recetas from "../../assets/Recetas.jpg";
 import { motion } from "framer-motion";
@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'Sinergia Coworking',
       description: 'Plataforma de coworking diseñada e implementada para fomentar la colaboración entre profesionales. Desarrollada con React y Node.js, con integración de autenticación.',
       link: 'https://develop--sinergia-cowork.netlify.app/',
-      // screenshot: coworking,
+      screenshot: coworking,
     },
     {
       title: 'WellNest Clinic',
@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <motion.section
-      className="bg-gradient-to-r from-purple-800 to-indigo-900 p-14 text-white text-center min-h-screen"
+      className="  p-14 text-white text-center min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
