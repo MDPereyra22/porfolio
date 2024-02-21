@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProyectCard";
-import coworking from "../../assets/coworking.jpg";
+import coworking from "../../assets/prueba.png";
 // import wellNest from "../../assets/wellnest.jpg";
 // import recetas from "../../assets/Recetas.jpg";
 import { motion } from "framer-motion";
