@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <motion.section
-      className="  p-14 text-white text-center min-h-screen"
+      className=" bg-gradient-to-r from-purple-800 to-indigo-900 p-14 text-white text-center min-h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
