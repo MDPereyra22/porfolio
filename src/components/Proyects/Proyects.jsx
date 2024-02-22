@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import ProjectCard from "./ProyectCard";
-import coworking from "../../assets/prueba.png";
-// import wellNest from "../../assets/wellnest.jpg";
-// import recetas from "../../assets/Recetas.jpg";
+import coworking from "../../assets/coworking.png";
+import recetas from "../../assets/bestfood.png";
+import porfolio from "../../assets/porfolio.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -15,16 +15,16 @@ const Projects = () => {
       screenshot: coworking,
     },
     {
-      title: 'WellNest Clinic',
-      description: 'Colaboración en el diseño y desarrollo de una plataforma médica centrada en el bienestar del paciente. Utiliza tecnologías como React, Redux y Firebase para una experiencia fluida y segura.',
-      link: 'https://wellnest-clinic.netlify.app/',
-      // screenshot: wellNest,
-    },
-    {
       title: 'The Best Food App',
       description: 'Plataforma integral de recetas de comida con un diseño atractivo y funcionalidades avanzadas. Desarrollada con React y Firebase para garantizar una experiencia de usuario óptima.',
       link: 'https://thebestfoodapp.netlify.app',
-      // screenshot: recetas,
+      screenshot: recetas,
+    },
+    {
+      title: 'WellNest Clinic',
+      description: 'Colaboración en el diseño y desarrollo de una plataforma médica centrada en el bienestar del paciente. Utiliza tecnologías como React, Redux y Firebase para una experiencia fluida y segura.',
+      link: 'https://wellnest-clinic.netlify.app/',
+      screenshot: porfolio,
     },
   ];
 
