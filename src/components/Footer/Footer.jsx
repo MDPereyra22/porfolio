@@ -22,7 +22,6 @@ const Footer = () => {
           <a href="mailto:pereyra.dmatias@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src={sobre} alt="Correo" className="w-40 h-auto hover:opacity-40  transition-all duration-300" />
           </a>
-          {/* Agrega más iconos según sea necesario */}
         </div>
         <p className="mt-4">© 2024 Matias Pereyra</p>
       </div>
