@@ -13,19 +13,23 @@ const Projects = () => {
       description: 'Plataforma de coworking diseñada e implementada para fomentar la colaboración entre profesionales. Desarrollada con React y Node.js, con integración de autenticación.',
       link: 'https://develop--sinergia-cowork.netlify.app/',
       screenshot: coworking,
+      github:'https://github.com/GDuranHenriquez/SinergiaCoworking'
     },
     {
       title: 'The Best Food App',
       description: 'Plataforma integral de recetas de comida con un diseño atractivo y funcionalidades avanzadas. Desarrollada con React y Firebase para garantizar una experiencia de usuario óptima.',
       link: 'https://thebestfoodapp.netlify.app',
       screenshot: recetas,
+      github:'https://github.com/MDPereyra22/bestFood-client'
     },
     {
       title: 'WellNest Clinic',
       description: 'Colaboración en el diseño y desarrollo de una plataforma médica centrada en el bienestar del paciente. Utiliza tecnologías como React, Redux y Firebase para una experiencia fluida y segura.',
-      link: 'https://wellnest-clinic.netlify.app/',
+      link: 'https://matiaspereyra.netlify.app/',
       screenshot: porfolio,
+      github:'https://github.com/MDPereyra22/porfolio'
     },
+    
   ];
 
   return (
