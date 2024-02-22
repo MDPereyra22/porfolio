@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import ProjectCard from "./ProyectCard";
 import coworking from "../../assets/prueba.png";

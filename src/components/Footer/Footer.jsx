@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github2.png";

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
+import  { useState } from "react";
 import profileImage from "../../assets/perfil.jpg";
 import qr from "../../assets/qr.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,7 +8,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import cv from '../../assets/CV.pdf'
 
 
-const Header = () => {
+const Header = () => { 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAboutMe = () => {

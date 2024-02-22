@@ -1,6 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// eslint-disable-next-line react/prop-types
 const ProjectCard = ({ screenshot, title, description, link }) => (
   <motion.div
     className="bg-purple-800 p-6 rounded-lg shadow-lg mb-8"
