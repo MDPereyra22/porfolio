@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 import jsImage from '../../assets/java-script.png';
 import htmlImage from '../../assets/html.png';
@@ -47,13 +46,13 @@ const Technologies = () => {
   };
 
   return (
-    <motion.section
+    <section
       className="text-center min-h-screen bg-gradient-to-r from-purple-800 to-indigo-900 p-24"
     >
       <h2 className="text-3xl font-bold mb-10 text-white">Tecnologías</h2>
       <div className="flex justify-center mb-8 space-x-4">
         {Object.keys(techData).map((tab) => (
-          <motion.button
+          <button
             key={tab}
             onClick={() => handleTabChange(tab)}
             className={`px-4 py-2 rounded-full ${
@@ -61,23 +60,22 @@ const Technologies = () => {
             } transition-all duration-300`}
           >
             {tab}
-          </motion.button>
+          </button>
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {techData[activeTab].map(({ name, icon }, index) => (
-          <motion.div
+          <div
             key={index}
             className="bg-white p-2 w-80 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          
           >
             {icon && <img src={icon} alt={name} className="w-12 h-12 mb-4 mx-auto" />}
             <p className="text-gray-800 font-semibold text-center">{name}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
