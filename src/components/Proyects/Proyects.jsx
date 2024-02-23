@@ -36,7 +36,12 @@ const Projects = () => {
     },
     {
       title: 'WellNest Clinic',
-      description: 'Colaboración en el diseño y desarrollo de una plataforma médica centrada en el bienestar del paciente. Utiliza tecnologías como React, Redux y Firebase para una experiencia fluida y segura.',
+      description: (
+        <>
+          Mi propio portafolio donde muestro mis proyectos y habilidades como desarrollador web.
+          Desarrollado con React y desplegado en Netlify.
+        </>
+        ),
       link: 'https://matiaspereyra.netlify.app/',
       screenshot: porfolio,
       github:'https://github.com/MDPereyra22/porfolio'
@@ -51,7 +56,7 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h2 className="text-4xl font-bold mb-8">Proyectos Destacados</h2>
+      <h2 className="text-4xl font-bold mb-8 text-black">Proyectos Destacados</h2>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         initial={{ y: 20, opacity: 0 }}

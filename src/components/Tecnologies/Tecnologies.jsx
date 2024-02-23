@@ -49,14 +49,14 @@ const Technologies = () => {
     <section
       className="text-center min-h-screen bg-gradient-to-r from-purple-800 to-indigo-900 p-24"
     >
-      <h2 className="text-3xl font-bold mb-10 text-white">Tecnologías</h2>
+      <h2 className="text-3xl font-bold mb-10 text-black">Tecnologías</h2>
       <div className="flex justify-center mb-8 space-x-4">
         {Object.keys(techData).map((tab) => (
           <button
             key={tab}
             onClick={() => handleTabChange(tab)}
             className={`px-4 py-2 rounded-full ${
-              activeTab === tab ? 'bg-white text-black' : 'bg-gray-800 text-white'
+              activeTab === tab ? 'bg-gray-500 text-white py-2 px-4 rounded-md ' : 'bg-gray-100 py-2 px-4 rounded-md inline-block'
             } transition-all duration-300`}
           >
             {tab}
