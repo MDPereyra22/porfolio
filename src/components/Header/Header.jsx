@@ -61,7 +61,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className={`bg-transparent border-black border-solid border-2 text-white px-4 py-2 rounded-full w-40  mb-2 hover:bg-gray-400 transition-colors duration-300`}
+              className={"bg-gray-500 text-white py-2 px-4 rounded-md w-40 m-2 hover:bg-gray-600 transition duration-300 inline-block"}
             >
               <a
                 href={cv}
@@ -80,7 +80,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               onClick={toggleAboutMe}
-              className={`bg-transparent border-black border-solid border-2 text-white px-4 py-2 rounded-full w-40  ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-400 transition-colors duration-300`}
+              className={`bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 inline-block mx-1 w-40  ${isOpen ? 'text-gray-500' : 'text-black'} hover:bg-gray-400 transition-colors duration-300`}
             >
               <span className="mr-2">
                 <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />

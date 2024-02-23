@@ -10,14 +10,26 @@ const Projects = () => {
   const projectsData = [
     {
       title: 'Sinergia Coworking',
-      description: 'Plataforma de coworking diseñada e implementada para fomentar la colaboración entre profesionales. Desarrollada con React y Node.js, con integración de autenticación.',
+      description: (
+        <>
+          Una plataforma de coworking diseñada e implementada para fomentar la colaboración entre profesionales.
+          Desarrollada con React y Node.js, con integración de autenticación.
+          Tecnologías utilizadas: React, Node.js, Sql, Cloudinary, Figma.
+        </>
+      ),
       link: 'https://develop--sinergia-cowork.netlify.app/',
       screenshot: coworking,
       github:'https://github.com/GDuranHenriquez/SinergiaCoworking'
     },
     {
       title: 'The Best Food App',
-      description: 'Plataforma integral de recetas de comida con un diseño atractivo y funcionalidades avanzadas. Desarrollada con React y Firebase para garantizar una experiencia de usuario óptima.',
+      description: (
+        <>
+          Una plataforma integral de recetas de comida con un diseño atractivo y funcionalidades avanzadas.
+          Desarrollada con React para garantizar una experiencia de usuario óptima.
+          Tecnologías utilizadas: React, Node.Js Sql.
+        </>
+      ),
       link: 'https://thebestfoodapp.netlify.app',
       screenshot: recetas,
       github:'https://github.com/MDPereyra22/bestFood-client'
