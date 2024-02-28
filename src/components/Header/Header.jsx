@@ -25,7 +25,7 @@ const Header = () => {
             transition={{ duration: 1.5, delay: 0.2 }}
             src={profileImage}
             alt="Profile"
-            className="w-80 h-80  mr-4 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4 shadow-xl"
+            className="w-50 h-50 sm:w-56 sm:h-56 md:mr-4 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4 shadow-xl"
           />
           <div className="text-center md:text-left">
             <motion.h1
