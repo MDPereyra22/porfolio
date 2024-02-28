@@ -18,14 +18,14 @@ const Header = () => {
   return (
     <motion.header className="bg-gradient-to-r from-purple-800 to-indigo-900 min-h-screen flex flex-col items-center justify-center p-20 text-black text-center">
       <div className="overflow-hidden mb-8 max-w-4xl">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-4 mb-2">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-3 mb-2">
           <motion.img
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 0.2 }}
             src={profileImage}
             alt="Profile"
-            className="w-80 h-80 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4 shadow-xl"
+            className="w-80 h-80  mr-4 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 p-4 shadow-xl"
           />
           <div className="text-center md:text-left">
             <motion.h1
@@ -101,10 +101,10 @@ const Header = () => {
             >
               <div className="flex-grow mr-8">
                 <p className="text-left p-2 text-sm">
-                  Soy Matías, un apasionado desarrollador Full Stack con una visión creativa y una mente analítica. Mi enfoque se centra en transformar ideas en experiencias digitales cautivadoras. Con habilidades sólidas en tecnologías web y un compromiso constante con la excelencia, busco marcar la diferencia a través de la innovación.
+                Soy Matías, un desarrollador Full Stack apasionado por la creación. Me encanta transformar ideas en experiencias digitales. Mi curiosidad me lleva a explorar nuevos horizontes, ya sea en la música, la cocina o la programación.
                 </p>
                 <p className="text-left p-2 text-sm">
-                  Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica. Ahora, como desarrollador, estoy decidido a aplicar mis habilidades para crear soluciones innovadoras.
+                  Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica.
                 </p>
                 <p className="text-left p-2 text-sm">
                   Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
