@@ -56,7 +56,7 @@ const Technologies = () => {
             key={tab}
             onClick={() => handleTabChange(tab)}
             className={`px-4 py-2 rounded-full ${
-              activeTab === tab ? 'bg-gray-500 text-white py-2 px-4 rounded-md ' : 'bg-gray-100 py-2 px-4 rounded-md inline-block'
+              activeTab === tab ? 'bg-gray-500 text-white w-24 py-2 px-4 rounded-md ' : 'bg-gray-100 w-24 py-2 px-4 rounded-md inline-block'
             } transition-all duration-300`}
           >
             {tab}
