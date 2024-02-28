@@ -31,7 +31,7 @@ const ProjectCard = ({ screenshot, title, description, link, github }) => (
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 inline-block"
+          className="bg-gray-500 text-white md:w-32 w-20 text-sm md:text-base py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 inline-block"
         >
           Ver Proyecto
         </a>
@@ -39,7 +39,7 @@ const ProjectCard = ({ screenshot, title, description, link, github }) => (
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 inline-block"
+          className="bg-gray-500 text-white md:w-32 w-20 text-sm md:text-base py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 inline-block"
         >
           Ver código
         </a>
