@@ -63,11 +63,11 @@ const Technologies = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {techData[activeTab].map(({ name, icon }, index) => (
           <div
             key={index}
-            className="bg-white p-2 w-80 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 mx-auto"
+            className="bg-white p-2 w-40 md:w-50 lg:w-60 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 mx-auto"
           
           >
             {icon && <img src={icon} alt={name} className="w-12 h-12 mb-4 mx-auto" />}
