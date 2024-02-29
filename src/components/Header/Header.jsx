@@ -31,7 +31,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 ml-4"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 md:ml-4"
             >
               Matías Daniel Pereyra
             </motion.h1>
@@ -39,7 +39,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg md:text-xl mb-4  ml-4"
+              className="text-lg md:text-xl mb-4  md:ml-4"
             >
               Full Stack Web Developer
             </motion.p>
@@ -47,7 +47,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-md italic text-gray-300 mb-4  ml-4"
+              className="text-md italic text-gray-300 mb-4 md:ml-4"
             >
               "Transformando ideas en experiencias digitales"
             </motion.p>
