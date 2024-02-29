@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import ProjectCard from "./ProyectCard";
-import coworking from "../../assets/Coworking.png";
-import recetas from "../../assets/bestfood.png";
-import porfolio from "../../assets/porfolio.png";
+import coworking from "../../assets/Coworking.jpg";
+import recetas from "../../assets/bestfood.jpg";
+import porfolio from "../../assets/porfolio.jpg";
 import { motion } from "framer-motion";
 
 const Projects = () => {

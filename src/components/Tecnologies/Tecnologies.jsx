@@ -1,19 +1,19 @@
 import { useState } from 'react';
 
-import jsImage from '../../assets/java-script.png';
-import htmlImage from '../../assets/html.png';
-import cssImage from '../../assets/css.png';
-import nodeImage from '../../assets/nodejs.png';
+import jsImage from '../../assets/js.avif';
+import htmlImage from '../../assets/html-5.avif';
+import cssImage from '../../assets/css.avif';
+import nodeImage from '../../assets/nodejs.avif';
 import reactImage from '../../assets/react.svg';
-import reduxImage from '../../assets/redux.svg';
-import sqlImage from '../../assets/sql-server.png';
-import postgresImage from '../../assets/postgre.png';
-import gitImage from '../../assets/github.png';
-import expressImg from '../../assets/express-js.webp';
-import sequelizeImg from '../../assets/sequelize.webp';
-import antImg from '../../assets/antdesign.png';
-import cloudyImg from '../../assets/cloudinary.png';
-import figmaImg from '../../assets/figma.png';
+import reduxImage from '../../assets/Redux.avif';
+import sqlImage from '../../assets/sql-server.avif';
+import postgresImage from '../../assets/postgre.avif';
+import gitImage from '../../assets/github.avif';
+import expressImg from '../../assets/express-js.avif';
+import sequelizeImg from '../../assets/sequelize.avif';
+import antImg from '../../assets/antdesign.avif';
+import cloudyImg from '../../assets/cloudinary.avif';
+import figmaImg from '../../assets/figma.avif';
 
 const Technologies = () => {
   const [activeTab, setActiveTab] = useState('Backend');
