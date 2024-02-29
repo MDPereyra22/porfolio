@@ -1,29 +1,39 @@
 // src/components/AboutMe.jsx
-import React from 'react';
-import profileImage from '../../assets/rojo.jpg';
+import qr from "../../assets/qr.png";
+import { motion} from "framer-motion";
+
 
 const AboutMe = () => {
   return (
-    <section className=" bg-gradient-to-r from-amber-300 via-amber-200 to-amber-100 text-white p-8 shadow-md">
-      <div className="flex items-center ">
-        <img src={profileImage} alt="Mi imagen" className=" w-60  mr-10" />
-        <div>
-          <h2 className="text-3xl font-bold mb-2 text-black p-2">Acerca de Mí</h2>
-          <p className="text-left text-black p-2">
-            Soy Matías, un desarrollador Full Stack.
-            Soy una persona enérgica, imaginativa, optimista, comprometida, resolutiva y detallista. Poseo una gran capacidad de liderazgo, comunicación eficaz, colaboración en equipo, planificación y organización.
-            Decidí adentrarme en el mundo del desarrollo Full Stack en Henry, impulsado por mi profundo interés en el avance tecnológico y en cómo la programación puede dar vida a proyectos educativos innovadores.
-          </p>
-          <p className="text-left text-black p-2">
-            En mi recorrido, he desempeñado roles como auxiliar docente y profesor de computación, experiencias que me permitieron observar de primera mano lo necesario de una transformación tecnológica en la educación.
-            Esta visión me motivó a expandir mis habilidades y sumergirme de lleno en el universo del desarrollo Full Stack. Ahora, anhelo aplicar mis conocimientos técnicos para crear soluciones web innovadoras que revolucionen la manera en que aprendemos y nos comunicamos.
-          </p>
-          <p className="text-left text-black p-2">
-            Busco la oportunidad idónea para exhibir mis habilidades, contribuir con mis conocimientos a un equipo y, sobre todo, continuar mi aprendizaje mientras impulso mi trayectoria como desarrollador de software.
-          </p>
+    <motion.div
+    initial={{ height: 0, opacity: 0 }}
+    animate={{ height: "auto", opacity: 1 }}
+    exit={{ height: 0, opacity: 0 }}
+    transition={{ duration: 0.5 }}
+    className="text-gray-50 p-4 rounded-md relative flex"
+  >
+      <div className="flex-grow mr-8">
+        <p className="text-left p-2 text-sm">
+          Soy Matías, un desarrollador Full Stack apasionado por la creación. Me encanta transformar ideas en experiencias digitales. Mi curiosidad me lleva a explorar nuevos horizontes, ya sea en la música, la cocina o la programación.
+        </p>
+        <p className="text-left p-2 text-sm">
+          Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica.
+        </p>
+        <p className="text-left p-2 text-sm">
+          Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
+        </p>
+      </div>
+      <div className="flex-shrink-0">
+        <div className="flex flex-col items-center">
+          <img
+            src={qr}
+            alt="Contactame"
+            className="w-48 h-48 rounded-md mb-2 shadow-md"
+          />
+          <p className="text-xs font-bold">Contactame</p>
         </div>
       </div>
-    </section>
+      </motion.div>
   );
 };
 
