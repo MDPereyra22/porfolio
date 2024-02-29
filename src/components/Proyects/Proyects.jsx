@@ -35,10 +35,10 @@ const Projects = () => {
       github:'https://github.com/MDPereyra22/bestFood-client'
     },
     {
-      title: 'WellNest Clinic',
+      title: 'Porfolio',
       description: (
         <>
-          Mi propio portafolio donde muestro mis proyectos y habilidades como desarrollador web.
+          Mi propio porfolio donde muestro mis proyectos y habilidades como desarrollador web.
           Desarrollado con React y desplegado en Netlify.
         </>
         ),
