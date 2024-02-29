@@ -10,16 +10,16 @@ const AboutMe = () => {
     animate={{ height: "auto", opacity: 1 }}
     exit={{ height: 0, opacity: 0 }}
     transition={{ duration: 0.5 }}
-    className="text-gray-50 p-4 rounded-md relative flex"
+    className="text-gray-50 p-4 rounded-md relative flex flex-col md:flex-row"
   >
-      <div className="flex-grow mr-8">
-        <p className="text-left p-2 text-sm">
+      <div className="flex-grow mb-3 text">
+        <p className="text-center p-2 text-sm">
           Soy Matías, un desarrollador Full Stack apasionado por la creación. Me encanta transformar ideas en experiencias digitales. Mi curiosidad me lleva a explorar nuevos horizontes, ya sea en la música, la cocina o la programación.
         </p>
-        <p className="text-left p-2 text-sm">
+        <p className="text-center p-2 text-sm">
           Mi viaje en el desarrollo comenzó en Henry, donde descubrí mi profundo interés en el avance tecnológico. He desempeñado roles educativos, observando la necesidad de una transformación tecnológica.
         </p>
-        <p className="text-left p-2 text-sm">
+        <p className="text-center p-2 text-sm">
           Estoy en constante búsqueda de oportunidades desafiantes para crecer profesionalmente y contribuir significativamente a proyectos emocionantes. ¡Conversemos y exploremos cómo podemos trabajar juntos para lograr grandes cosas!
         </p>
       </div>
