@@ -28,7 +28,7 @@ const AboutMe = () => {
           <img
             src={qr}
             alt="Contactame"
-            className="w-48 h-48 rounded-md mb-2 shadow-md"
+            className="w-48 h-48 rounded-md mb-2 shadow-md hidden sm:block md:block lg:block"
           />
           <p className="text-xs font-bold">Contactame</p>
         </div>
