@@ -56,7 +56,7 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h2 className="text-4xl font-bold mb-8 text-black">Proyectos Destacados</h2>
+      <h2 className="text-4xl font-bold mb-8 text-white">Proyectos Destacados</h2>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         initial={{ y: 20, opacity: 0 }}
