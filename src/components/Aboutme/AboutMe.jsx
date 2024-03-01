@@ -30,7 +30,7 @@ const AboutMe = () => {
             alt="Contactame"
             className="w-48 h-48 rounded-md mb-2 shadow-md hidden sm:block md:block lg:block"
           />
-          <p className="text-xs font-bold">Contactame</p>
+          <p className="text-xs font-bold hidden sm:block md:block lg:block">Contactame</p>
         </div>
       </div>
       </motion.div>
