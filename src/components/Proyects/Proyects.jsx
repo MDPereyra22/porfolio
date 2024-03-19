@@ -4,6 +4,7 @@ import ProjectCard from "./ProyectCard";
 import coworking from "../../assets/Coworking.jpg";
 import recetas from "../../assets/bestfood.jpg";
 import porfolio from "../../assets/porfolio.jpg";
+import tateti from "../../assets/tateti.JPG";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -45,6 +46,17 @@ const Projects = () => {
       link: 'https://matiaspereyra.netlify.app/',
       screenshot: porfolio,
       github:'https://github.com/MDPereyra22/porfolio'
+    },
+    {
+      title: 'Ta-Te-Ti',
+      description: (
+        <>
+          Juego clásico de Ta-Te-Ti desarrollado en React.
+        </>
+        ),
+      link: 'https://jugandotateti.netlify.app/',
+      screenshot: tateti,
+      github:'https://github.com/MDPereyra22/tateti'
     },
     
   ];
